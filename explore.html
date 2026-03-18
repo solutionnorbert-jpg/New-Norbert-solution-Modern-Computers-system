@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New-Norbert-solution-Modern-Computers-system</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS - ONLY ONE LINK -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Animated particles -->
+<div id="particles-js"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">Norbert Solution • Modern Tech</div>
+    
+    <ul>
+<a href="index.html">Home</a>
+<a href="components.html">Components</a>
+<a href="features.html">Features</a>
+<a href="uses.html">Uses</a>
+<a href="video.html">Videos</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<button id="darkModeToggle">🌙</button>
+    </ul>
+</nav>
+
+<!-- Header -->
+<div class="header">
+    <h1>Explore Computer Technology</h1>
+    <p>Learn more about the world of modern computing, hardware innovations, and the future of digital transformation.</p>
+</div>
+
+<!-- Cards -->
+<div class="container">
+    <div class="card">
+        <i class="fas fa-microchip icon"></i>
+        <h2>Computer Hardware</h2>
+        <p>
+            Computer hardware includes physical components like the CPU, RAM,
+            motherboard, storage devices, and graphics cards. These parts work
+            together to power modern computer systems and enable complex computations.
+        </p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-code icon"></i>
+        <h2>Software Systems</h2>
+        <p>
+            Software includes operating systems, applications, and programs
+            that allow users to interact with computers and perform tasks
+            such as browsing the web, creating documents, and running complex algorithms.
+        </p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-robot icon"></i>
+        <h2>Future Technology</h2>
+        <p>
+            Emerging technologies such as artificial intelligence,
+            quantum computing, and cloud systems are shaping the
+            future of computing and transforming industries worldwide at an unprecedented pace.
+        </p>
+    </div>
+</div>
+
+<!-- Technology in Numbers -->
+<section class="stats-section">
+    <h2>Technology in Numbers</h2>
+    
+    <div class="stats-container">
+        <div class="stat-item">
+            <h3>5B+</h3>
+            <p>Internet Users Worldwide</p>
+        </div>
+        
+        <div class="stat-item">
+            <h3>90%</h3>
+            <p>Companies Using Cloud</p>
+        </div>
+        
+        <div class="stat-item">
+            <h3>1T+</h3>
+            <p>AI Calculations Per Day</p>
+        </div>
+        
+        <div class="stat-item">
+            <h3>100ZB</h3>
+            <p>Global Data Generated</p>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Technology Innovations -->
+<section class="innovations-section">
+    <h2>Technology Innovations</h2>
+    
+    <div class="innovations-grid">
+        <div class="innovation-card">
+            <i class="fas fa-brain icon"></i>
+            <h3>Artificial Intelligence</h3>
+            <p>
+                AI systems can analyze huge amounts of data and automate tasks.
+                They power chatbots, voice assistants, and smart technologies
+                that are revolutionizing how we work and live.
+            </p>
+        </div>
+
+        <div class="innovation-card">
+            <i class="fas fa-cloud icon"></i>
+            <h3>Cloud Computing</h3>
+            <p>
+                Cloud platforms allow companies to store data and run applications
+                on remote servers instead of local computers, enabling scalability,
+                flexibility, and global access to resources.
+            </p>
+        </div>
+
+        <div class="innovation-card">
+            <i class="fas fa-shield-alt icon"></i>
+            <h3>Cyber Security</h3>
+            <p>
+                Security technologies protect computer systems, networks,
+                and personal data from hackers and cyber threats, ensuring
+                privacy and safety in our increasingly digital world.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Technology Timeline -->
+<section class="timeline-section">
+    <h2>Technology Timeline</h2>
+    
+    <div class="timeline-container">
+        <div class="timeline-item">
+            <h3>1990s – Internet Revolution</h3>
+            <p>The rise of the World Wide Web connected millions of computers globally and changed communication forever. Email, web browsing, and e-commerce began to transform society.</p>
+        </div>
+        
+        <div class="timeline-item">
+            <h3>2000s – Mobile Technology</h3>
+            <p>Smartphones and wireless networks made computing portable and accessible to billions of people. The App Store and Google Play created new ecosystems for software.</p>
+        </div>
+        
+        <div class="timeline-item">
+            <h3>2010s – Cloud & AI</h3>
+            <p>Cloud computing became mainstream, and artificial intelligence started powering everything from recommendations to autonomous vehicles. Big data transformed decision-making.</p>
+        </div>
+        
+        <div class="timeline-item">
+            <h3>2020s – Quantum & Beyond</h3>
+            <p>Quantum computing, edge computing, and advanced AI are pushing the boundaries of what's possible, solving problems once thought impossible.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Back button -->
+<div class="back">
+    <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home</a>
+</div>
+
+<!-- Particles Script -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 100, density: { enable: true, value_area: 800 } },
+            color: { value: "#00f7ff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: true },
+            size: { value: 3, random: true },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#00f7ff",
+                opacity: 0.3,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 2,
+                direction: "none",
+                random: true,
+                straight: false,
+                out_mode: "out"
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: { enable: true, mode: "repulse" },
+                onclick: { enable: true, mode: "push" }
+            }
+        }
+    });
+</script>
+
+<!-- Main JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>

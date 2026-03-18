@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New-Norbert-solution-Modern-Computers-system</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">  <!-- This should be correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+    <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Norbert Solution Logo">
+        <span class="brand-name">Norbert Solution</span>
+    </a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="components.html">Components</a>
+<a href="features.html">Features</a>
+<a href="uses.html">Uses</a>
+<a href="video.html">Videos</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<button id="darkModeToggle">🌙</button>
+</nav>
+</header>
+
+<!-- ===== Page Header ===== -->
+<section class="video-page-header">
+    <div class="container">
+        <h1 class="reveal">Video Gallery</h1>
+        <p class="reveal">Explore modern computer technology through our curated video collection</p>
+    </div>
+</section>
+
+<!-- ===== Featured Video Section ===== -->
+<section class="featured-video-section">
+    <div class="container">
+        <h2 class="section-title reveal">Featured Video</h2>
+        <p class="section-subtitle reveal">Watch our latest content about modern computing</p>
+        
+        <div class="featured-video-container reveal">
+            <div class="video-wrapper featured">
+                <!-- Replace with your video file or embed code -->
+                <video controls poster="images/video-thumbnai.jpg">
+                <source src="videos/featured-video.mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Alternative: YouTube Embed -->
+                <!--
+                <iframe src="https://www.youtube.com/embed/your-video-id" 
+                        title="Featured Video" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+                -->
+            </div>
+            
+            <div class="video-info">
+                <h3>The Future of Modern Computers</h3>
+                <div class="video-meta">
+                    <span><i class="far fa-clock"></i> 15:30 min</span>
+                    <span><i class="far fa-eye"></i> 2.5K views</span>
+                    <span><i class="far fa-calendar"></i> March 15, 2026</span>
+                </div>
+                <p class="video-description">
+                    Discover how modern computers are evolving with artificial intelligence, 
+                    quantum computing, and advanced hardware. This comprehensive video explores 
+                    the latest innovations shaping the future of technology.
+                </p>
+                <div class="video-tags">
+                    <span class="tag">#ModernComputers</span>
+                    <span class="tag">#Technology</span>
+                    <span class="tag">#Innovation</span>
+                    <span class="tag">#FutureTech</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Video Categories ===== -->
+<section class="video-categories">
+    <div class="container">
+        <div class="category-filters reveal">
+            <button class="category-btn active" data-category="all">All Videos</button>
+            <button class="category-btn" data-category="hardware">Hardware</button>
+            <button class="category-btn" data-category="software">Software</button>
+            <button class="category-btn" data-category="ai">AI & Robotics</button>
+            <button class="category-btn" data-category="tutorials">Tutorials</button>
+            <button class="category-btn" data-category="reviews">Reviews</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Video Grid Section ===== -->
+<section class="video-grid-section">
+    <div class="container">
+        <div class="video-grid">
+            
+            <!-- Video Card 1 - Hardware -->
+            <div class="video-card reveal" data-category="hardware">
+                <div class="video-thumbnail">
+                    <img src="images/computer.jpg" alt="Computer Hardware Explained">
+                    <span class="video-duration">12:45</span>
+                    <button class="play-btn" onclick="playVideo('video1.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Computer Hardware Explained</h3>
+                    <p>Learn about CPU, GPU, RAM, and storage devices in detail.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 3.2K views</span>
+                        <span><i class="far fa-clock"></i> 2 days ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 2 - AI -->
+            <div class="video-card reveal" data-category="ai">
+                <div class="video-thumbnail">
+                    <img src="images/video-ai.jpg" alt="Artificial Intelligence">
+                    <span class="video-duration">18:20</span>
+                    <button class="play-btn" onclick="playVideo('video2.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>How AI is Changing Computing let us suleyman help us to understand more</h3>
+                    <p>Explore the impact of artificial intelligence on modern computers.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 5.1K views</span>
+                        <span><i class="far fa-clock"></i> 5 days ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 3 - Tutorial -->
+            <div class="video-card reveal" data-category="tutorials">
+                <div class="video-thumbnail">
+                    <img src="images/video-build.jpeg" alt="Build a PC">
+                    <span class="video-duration">25:30</span>
+                    <button class="play-btn" onclick="playVideo('video3.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Build Your Own Computer</h3>
+                    <p>Step-by-step guide to building a custom PC from scratch.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 8.7K views</span>
+                        <span><i class="far fa-clock"></i> 1 week ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 4 - Software -->
+            <div class="video-card reveal" data-category="software">
+                <div class="video-thumbnail">
+                    <img src="images/video-software.png" alt="Operating Systems">
+                    <span class="video-duration">14:15</span>
+                    <button class="play-btn" onclick="playVideo('video4.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Understanding Operating Systems</h3>
+                    <p>How Windows, macOS, and Linux power modern computers.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 2.3K views</span>
+                        <span><i class="far fa-clock"></i> 3 days ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 5 - Reviews -->
+            <div class="video-card reveal" data-category="reviews">
+                <div class="video-thumbnail">
+                    <img src="images/video-review.jpeg" alt="Laptop Review">
+                    <span class="video-duration">10:45</span>
+                    <button class="play-btn" onclick="playVideo('video5.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Best Laptops 2026 Review</h3>
+                    <p>Top 5 laptops for programming, design, and gaming.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 6.8K views</span>
+                        <span><i class="far fa-clock"></i> 4 days ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 6 - AI -->
+            <div class="video-card reveal" data-category="ai">
+                <div class="video-thumbnail">
+                    <img src="images/video-robotics.jpg" alt="Robotics">
+                    <span class="video-duration">22:10</span>
+                    <button class="play-btn" onclick="playVideo('video6.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Robotics and Automation</h3>
+                    <p>How robots are using modern computer technology.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 4.2K views</span>
+                        <span><i class="far fa-clock"></i> 6 days ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 7 - Hardware -->
+            <div class="video-card reveal" data-category="hardware">
+                <div class="video-thumbnail">
+                    <img src="images/video-gpu.jpg" alt="Graphics Cards">
+                    <span class="video-duration">16:30</span>
+                    <button class="play-btn" onclick="playVideo('video7.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Graphics Cards Explained</h3>
+                    <p>How GPUs work and why they matter for gaming and work.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 3.9K views</span>
+                        <span><i class="far fa-clock"></i> 1 week ago</span>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Video Card 7 - Hardware -->
+            <div class="video-card reveal" data-category="hardware">
+                <div class="video-thumbnail">
+                    <img src="images/norbert.jpg" alt="Graphics Cards">
+                    <span class="video-duration">16:30</span>
+                    <button class="play-btn" onclick="playVideo('video10.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Computer installation Explained</h3>
+                    <p>nvolves physically setting up hardware components—connecting the monitor, keyboard, mouse, and power—followed by software installation.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 3.9K views</span>
+                        <span><i class="far fa-clock"></i> 1 week ago</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Card 8 - Tutorials -->
+            <div class="video-card reveal" data-category="tutorials">
+                <div class="video-thumbnail">
+                    <img src="images/video-coding.jpg" alt="Coding Tutorial">
+                    <span class="video-duration">20:15</span>
+                    <button class="play-btn" onclick="playVideo('video8.mp4')">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="video-card-content">
+                    <h3>Programming Basics</h3>
+                    <p>Learn the fundamentals of coding for beginners.</p>
+                    <div class="video-card-meta">
+                        <span><i class="far fa-eye"></i> 7.4K views</span>
+                        <span><i class="far fa-clock"></i> 2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- ===== Video Modal for Playback ===== -->
+<div id="videoModal" class="video-modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-video-container">
+            <video id="modalVideo" controls>
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<!-- ===== Call To Action ===== -->
+<section class="video-cta">
+    <div class="container">
+        <h2 class="reveal">Want More Tech Videos?</h2>
+        <p class="reveal">Subscribe to our channel for weekly updates on modern computer technology</p>
+        <div class="cta-buttons reveal">
+            <a href="#" class="cta-btn primary"><i class="fab fa-youtube"></i> Subscribe on YouTube</a>
+            <a href="contact.html" class="cta-btn secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>Modern Computers</h3>
+            <p>Learning about modern computer technology and innovation.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Pages</h4>
+            <a href="index.html">Home</a>
+            <a href="components.html">Components</a>
+            <a href="features.html">Features</a>
+            <a href="uses.html">Uses</a>
+            <a href="video.html">Videos</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="#">Computer Hardware</a>
+            <a href="#">Technology News</a>
+            <a href="#">Programming</a>
+            <a href="#">Learning Center</a>
+            <a href="#">Video Tutorials</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p><i class="far fa-envelope"></i> solutionnorbert@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Kigali, Rwanda | Kampala, Uganda</p>
+            <p><i class="fas fa-phone"></i> +250 783 313 944</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Modern Computers. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Custom JavaScript -->
+<script src="js/script.js"></script>
+<script src="js/video.js"></script>
+
+</body>
+</html>
