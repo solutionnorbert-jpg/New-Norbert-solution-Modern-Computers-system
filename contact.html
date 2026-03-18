@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New-Norbert-solution-Modern-Computers-system</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">  <!-- This should be correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="brand">
+            <img src="images/logo.png" alt="Norbert Solution Logo">
+            <span class="brand-name">Norbert Solution</span>
+        </a>
+
+        <nav>
+<a href="index.html">Home</a>
+<a href="components.html">Components</a>
+<a href="features.html">Features</a>
+<a href="uses.html">Uses</a>
+<a href="video.html">Videos</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<button id="darkModeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <h2>Contact Us</h2>
+        <p>If you have questions about modern computers, send us a message.</p>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="grid">
+        <div class="card contact-card">
+            <h3>📧 Email</h3>
+            <p>solutionnorbert@gmail.com</p>
+        </div>
+
+        <div class="card contact-card">
+            <h3>📍 Location</h3>
+            <p>Kampala, Uganda | Kigali, Rwanda</p>
+        </div>
+
+        <div class="card contact-card">
+            <h3>📞 Phone</h3>
+            <p>+250 783 313 944</p>
+            <!-- WhatsApp Button for Phone Card -->
+            <a href="https://wa.me/250783313944" target="_blank" class="whatsapp-btn-small">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Form with Web3Forms -->
+    <section class="content">
+        <h2>Send a Message</h2>
+        
+        <!-- WhatsApp Quick Contact -->
+        <div class="whatsapp-quick-contact">
+            <p>👋 Prefer instant messaging?</p>
+            <a href="https://wa.me/250783313944" target="_blank" class="whatsapp-btn-large">
+                <i class="fab fa-whatsapp"></i> Contact us directly on WhatsApp
+            </a>
+        </div>
+
+        <p style="text-align: center; margin: 20px 0;">- OR -</p>
+
+        <!-- WORKING FORM - Sends emails to solutionnorbert@gmail.com via Web3Forms -->
+        <form class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="contactForm"
+              onsubmit="return handleSubmit(event)">
+            
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="3f0a50be-34ac-420e-8a18-a9c04e107074">
+            
+            <!-- Optional Settings -->
+            <input type="hidden" name="subject" value="New Message from Modern Computers Website">
+            <input type="hidden" name="from_name" value="Modern Computers Contact Form">
+            <input type="hidden" name="reply_to" value="email">
+            
+            <!-- Redirect after submission -->
+            <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html">
+            
+            <!-- Form Fields -->
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            
+            <!-- WhatsApp Option -->
+            <div class="whatsapp-option">
+                <label>
+                    <input type="checkbox" name="whatsapp_contact" value="yes" onchange="toggleWhatsAppMessage(this)">
+                    📱 I prefer to be contacted on WhatsApp
+                </label>
+            </div>
+            
+            <!-- WhatsApp Number Field (hidden by default) -->
+            <div id="whatsappNumberField" style="display: none; margin-top: 10px;">
+                <input type="tel" name="whatsapp_number" placeholder="Your WhatsApp Number (e.g., 250783313944)">
+                <small>Enter your WhatsApp number with country code (without +)</small>
+            </div>
+            
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <!-- Honeypot to prevent spam -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <button type="submit">Send Message via Email</button>
+        </form>
+        
+        <!-- Success Message (shown after submission) -->
+        <div id="successMessage" style="display: none; text-align: center; margin-top: 20px; padding: 20px; background-color: #d4edda; color: #155724; border-radius: 5px;">
+            <h3>✅ Thank You!</h3>
+            <p>Your message has been sent successfully. We'll get back to you soon.</p>
+            <p>Check your email for a confirmation message.</p>
+        </div>
+        
+        <!-- Error Message -->
+        <div id="errorMessage" style="display: none; text-align: center; margin-top: 20px; padding: 20px; background-color: #f8d7da; color: #721c24; border-radius: 5px;">
+            <h3>❌ Oops!</h3>
+            <p>Something went wrong. Please try again or contact us directly on WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/250783313944" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Google Map -->
+    <section class="content">
+        <h2>Our Location</h2>
+        <iframe
+            src="https://maps.google.com/maps?q=Kigali%20Rwanda&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="350"
+            style="border:0; border-radius:10px;">
+        </iframe>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Modern Computers</h3>
+                <p>Learning about modern computer technology and innovation.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <a href="index.html">Home</a>
+                <a href="components.html">Components</a>
+                <a href="features.html">Features</a>
+                <a href="uses.html">Uses</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <p>Computer Hardware</p>
+                <p>Technology News</p>
+                <p>Programming</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>📧 solutionnorbert@gmail.com</p>
+                <p>📍 Kigali | Kampala</p>
+                <p>📞 +250 783 313 944</p>
+                <!-- WhatsApp in footer -->
+                <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/250783313944" target="_blank" style="color: white; text-decoration: none;">WhatsApp: +250 783 313 944</a></p>
+            </div>
+        </div>
+
+        <p class="footer-bottom">© 2026 Modern Computers</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <!-- Add this script for Web3Forms handling -->
+    <script>
+        async function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Hide form, show success message
+                    form.style.display = 'none';
+                    document.getElementById('successMessage').style.display = 'block';
+                    
+                    // Reset form for next time
+                    form.reset();
+                    
+                    // Hide WhatsApp field if visible
+                    document.getElementById('whatsappNumberField').style.display = 'none';
+                } else {
+                    // Show error message
+                    document.getElementById('errorMessage').style.display = 'block';
+                    
+                    // Restore button
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('errorMessage').style.display = 'block';
+                
+                // Restore button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+            
+            return false;
+        }
+        
+        // Update the toggleWhatsAppMessage function
+        function toggleWhatsAppMessage(checkbox) {
+            const whatsappField = document.getElementById('whatsappNumberField');
+            if (whatsappField) {
+                if (checkbox.checked) {
+                    whatsappField.style.display = 'block';
+                    const whatsappInput = whatsappField.querySelector('input');
+                    if (whatsappInput) {
+                        whatsappInput.required = true;
+                    }
+                } else {
+                    whatsappField.style.display = 'none';
+                    const whatsappInput = whatsappField.querySelector('input');
+                    if (whatsappInput) {
+                        whatsappInput.required = false;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
